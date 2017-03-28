@@ -124,8 +124,12 @@ h4 a {
     font-family: 'Quicksand', sans-serif;
 }
 
-.media .list img {
+/*.media .list img {
     padding-left: 1000px;
+}*/
+
+.productListUL {
+    padding-left: 0px;
 }
 
 .navbar-default .navbar-toggle {
