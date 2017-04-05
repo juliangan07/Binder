@@ -6,6 +6,35 @@
 .fa:hover {
     /*color: rgba(0, 154, 68, 1);*/
     color: #FF671F;
+    transition: 0.3s;
+    transform: translateY(2px);
+}
+
+.fa:active {
+    /*color: rgba(0, 154, 68, 1);*/
+    transform: translateY(3px);
+
+}
+
+a {
+    color: rgba(0, 154, 68, 1);
+}
+
+a:hover {
+    color: #FF671F;
+    cursor: pointer;
+    transition: 0.3s;
+    transform: translateY(3px);
+}
+
+a:active {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: translateY(5px);
+}
+
+.checkbox input:after{
+    color: #FF671F;
 }
 
 .navbar-default {
@@ -48,6 +77,13 @@
 .navbar-default .navbar-header .navbar-brand:hover {
     color: #FF671F;
     font-family: 'Libre Baskerville', serif;
+    transition: 0.3s;
+    transform: translateY(3px);
+}
+
+.navbar-default .navbar-header .navbar-brand:active {
+    font-family: 'Libre Baskerville', serif;
+    transform: translateY(5px);
 }
 
 .navbar-default .navbar-header .titleFont {
@@ -62,6 +98,13 @@
 .navbar-default .navbar-nav>li>a:hover {
     font-family: 'Libre Baskerville', serif;
     color: #FF671F;
+    transition: 0.3s;
+    transform: translateY(3px);
+}
+
+.navbar-default .navbar-nav>li>a:active {
+    font-family: 'Libre Baskerville', serif;
+    transform: translateY(6px);
 }
 
 .btn-default {
@@ -73,6 +116,14 @@
     font-family: 'Libre Baskerville', serif;
     color: #000000;
     background-color: #FF671F;
+    transition: 0.3s;
+    transform: translateY(3px);
+}
+
+.btn-default:active {
+    font-family: 'Libre Baskerville', serif;
+    color: #000000;
+    transform: translateY(5px);
 }
 
 .navbar-default .navbar-nav .btnSignInColor:hover {
@@ -95,19 +146,53 @@
     border-top: 1px solid rgba(0, 154, 68, 1);
 }
 
-h1 {
+h1, h2 {
     font-family: 'Libre Baskerville', serif;
+}
+
+.thumbnail:hover {
+    opacity: 0.8;
+    transform: translateY(2px);
+    transition: 0.3s;
+}
+
+.thumbnail:active {
+    opacity: 0.7;
+    transform: translateY(6px);
+    transition: 0.3s;
+
 }
 
 .thumbnail .caption h4 {
     font-family: 'Libre Baskerville', serif;
 }
 
-/*@media()*/
+.thumbnail .caption h4:hover {
+    color: #FF671F;
+}
+
+@media(min-width: 768px) {
+    body {
+        padding-bottom: 70px;
+    }
+
+}
+
+@media(max-width: 767px) {
+    .col-xs-10 {
+        width: 100%;
+    }
+}
 
 h4 a {
     font-family: 'Libre Baskerville', serif;
     color: rgba(0, 154, 68, 1);
+}
+
+.media-object:hover {
+    transform: translateY(3px);
+    transition: 0.3s;
+    opacity: 0.8;
 }
 
 .media .media-heading {
@@ -120,8 +205,17 @@ h4 a {
     color: #000000;
 }
 
+.media .media-heading a:hover {
+    color: #FF671F;
+    transform: translateY(3px);
+}
+
 .media h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;
+}
+
+.media-right {
+    padding-right: 10px;
 }
 
 /*.media .list img {
@@ -140,6 +234,14 @@ h4 a {
 .navbar-default .navbar-toggle:hover {
     color: #ffffff;
     background-color: #FF671F;
+    transform: translateY(2px);
+    transition: 0.3s;
+}
+
+.navbar-default .navbar-toggle:active {
+    color: #ffffff;
+    transform: translateY(5px);
+    transition: 0.3s;
 }
 
 body {
@@ -155,8 +257,8 @@ body {
     font-family: 'Titillium Web', sans-serif;
     font-family: 'Indie Flower', cursive;
     font-family: 'Poppins', sans-serif;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Dosis', sans-serif;*/
     font-family: 'Quicksand', sans-serif;
-    font-family: 'Gochi Hand', cursive;*/
-    padding-bottom: 70px;
+    /*font-family: 'Gochi Hand', cursive;*/
+    /*padding-bottom: 70px;*/
 }
