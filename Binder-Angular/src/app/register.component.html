@@ -1,0 +1,78 @@
+<div class="content container" [hidden]="submitted">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+        <h2>Register</h2>
+
+        <h6>Please register using your UND.edu email address</h6>
+        
+        <!--<p class="breakWord">{{diagnostic}}</p>-->
+
+        <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
+        <div class="form-group has-feedback">  <!--has-success-->
+            <label class="control-label" for="Email1">Email Address</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input class="form-control" type="text" id="Email1" 
+                    placeholder="Email Address" required [(ngModel)]="model.email1" name="email1" #email1="ngModel">
+                <!--<span class="glyphicon glyphicon-ok form-control-feedback"></span>-->
+            </div>
+            <div [hidden]="email1.valid || email1.pristine" class=" alert alert-danger">Please enter a valid UND.edu email address.</div>
+        </div>
+        
+
+        <!--<p>TODO: remove this: {{model.email1}}<p>-->
+
+        <div class="form-group">
+            <label class="control-label" for="Email2">Confirm Email Address</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input class="form-control"type="text" id="Email2" 
+                    placeholder="Email Address" required [(ngModel)]="model.email2" name="email2" #email2="ngModel">
+            </div>
+            <div [hidden]="email2.valid || email2.pristine" class=" alert alert-danger">Email address does not match.</div>
+        </div>
+
+        <!--<p>TODO: remove this: {{model.email2}}<p>-->
+
+        <div class="form-group">
+            <label class="control-label" for="Password1">Password</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input class="form-control" type="password" id="Password1" 
+                placeholder="Password" required [(ngModel)]="model.password1" name="password1" #password1="ngModel">
+            </div>
+            <div [hidden]="password1.valid || password1.pristine" class=" alert alert-danger">Password is required.</div>
+        </div>
+
+        <!--<p>TODO: remove this: {{model.password1}}<p>-->
+
+        <div class="form-group has-feedback">    <!--has-error-->
+            <label class="control-label" for="Password2">Confirm Password</label>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input class="form-control" type="password" id="Password2" 
+                    placeholder="Password" required [(ngModel)]="model.password2" name="password2" #password2="ngModel">
+                <!--<span class="glyphicon glyphicon-remove form-control-feedback"></span>-->
+            </div>
+            <div [hidden]="password2.valid || password2.pristine" class=" alert alert-danger">Password does not match.</div>
+        </div>
+
+        <!--<p>TODO: remove this: {{model.password2}}<p>-->
+        
+        <button class="btn btn-default pull-right" type="button" (click)="newRegister(); registerForm.reset()" [disabled]="password2.invalid">Register</button>
+
+        </form>
+    </div>
+</div>
+
+<div class="content container" [hidden]="!submitted">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+    <h2>Registration Successful!</h2>
+
+    <h4>A link will be sent to your email address for activation.</h4>
+    
+    <button class="btn btn-default" type="button" routerLink="/default">Back to Home</button>
+
+  </div>
+</div>

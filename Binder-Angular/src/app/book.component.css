@@ -1,0 +1,30 @@
+.btn-default {
+    text-align: center;
+    width: 100%;
+}
+
+.dropdown-menu {
+    left: 40%;
+}
+
+.thumbnail img:hover {
+    opacity: 0.8;
+    transform: translateY(3px);
+    transition: 0.2s;
+}
+
+@media(max-width: 991px) {
+    .sort {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
+
+.thumbnail {
+    border: 0px solid #ffffff;
+}
+
+.checkbox {
+    margin-left: 5px;
+}

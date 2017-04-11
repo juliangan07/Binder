@@ -1,0 +1,71 @@
+.fa {
+    color: #ffffff;
+}
+
+.fa:hover {
+    color: #FF671F;
+    transition: 0.3s;
+    transform: translateY(2px);
+}
+
+.navbar-default {
+    background-color: rgba(0, 154, 68, 1);
+    border: 1px solid rgba(0, 154, 68, 1);
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    color: #ffffff;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.navbar-default .navbar-header .titleFont {
+    font-size: 1.6em;
+}
+
+.navbar-default .navbar-toggle {
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover {
+    color: #FF671F;
+    transition: 0.2s;
+    transform: translateY(3px);
+}
+
+.navbar-default .navbar-header .navbar-brand:active {
+    color: #FF671F;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #FF671F;
+    transition: 0.2s;
+    transform: translateY(3px);
+}
+
+.navbar-default .navbar-nav .btnSignInColor {
+    color: #000000;
+}
+
+.navbar-default .navbar-nav .btnSignInColor:hover {
+    background-color: #FF671F;
+}
+
+.navbar-default .navbar-nav>li>a:active {
+    color: #FF671F;
+}
+
+.navbar-default .navbar-toggle:hover {
+    color: #ffffff;
+    background-color: #FF671F;
+    transform: translateY(2px);
+    transition: 0.3s;
+}
+
+.navbar{
+    margin-bottom: 0px;
+}

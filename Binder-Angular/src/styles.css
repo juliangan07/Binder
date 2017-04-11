@@ -1,0 +1,22 @@
+/*Entire Web App*/
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+a {
+    color: rgba(0, 154, 68, 1);
+}
+
+a:hover {
+    color: #FF671F;
+    cursor: pointer;
+}
+
+/*For wrapping problem*/
+.breakWord {
+    word-wrap: break-word;
+}

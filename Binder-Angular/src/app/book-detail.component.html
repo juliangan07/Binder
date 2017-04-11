@@ -1,0 +1,66 @@
+<div class="content container" *ngIf="book">
+  <div class="row">
+
+    <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12 hidden-xs">
+      <ul class="media list">
+        <li class="media">
+          <div class="media">
+              <h2 class="media-heading">{{book.title}}</h2>
+              <h6>by {{book.author}}</h6>
+              <h5>ISBN: {{book.isbn}}</h5>
+          </div>
+        </li>
+
+        <li class="media">
+          <div class="media-left">
+            <img class="media-object" src="{{book.img}}" alt="Book" width="150px">
+          </div>
+          <div class="media-right" style="border: 1px solid #000000; padding-bottom: 1%;">
+            <h2 class="media-heading">Description</h2>
+            <h5>{{book.description}}</h5>
+            <h4>Class Usage: {{book.classUse}}</h4>
+            <h4>Condition: {{book.condition}}</h4>
+            <h4>Seller: <a href="#">{{book.seller}}</a></h4>
+            <h2 class="media-heading">${{book.price}}</h2>
+            <button type="submit" class="btn btn-default">Contact Seller</button> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button (click)="goBack()" class="btn btn-default">Back to Book List</button>
+            <button [routerLink]="['/update', book.id]" class="btn btn-default">Edit</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!--For XS Layout-->
+<div class="content container" *ngIf="book">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden-md hidden-lg hidden-sm ">
+
+    <h2 class="breakWord">{{book.title}}</h2>
+    <h6>by {{book.author}}</h6>
+    <h5>ISBN: {{book.isbn}}</h5>
+
+    <img src="{{book.img}}" alt="{{book.title}}" width="150px">
+
+    <div class="smallView">
+      <h2>Description</h2>
+      <h5>{{book.description}}</h5>
+      <h4>Class Usage: {{book.classUse}}</h4>
+      <h4>Condition: {{book.condition}}</h4>
+      <h4>Seller: <a href="#">{{book.seller}}</a></h4>
+      <h2>${{book.price}}</h2>
+
+    </div>
+
+    <div class="form-group xsButton"> 
+      <button type="submit" class="btn btn-default">Contact Seller</button>
+      <br /><br />
+      <button (click)="goBack()" class="btn btn-default">Back to Book List</button>
+      <br />
+      <button [routerLink]="['/update', book.id]" class="btn btn-default">Edit</button>
+    </div>
+    
+  </div>
+</div>

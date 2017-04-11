@@ -1,0 +1,89 @@
+<div class="content container">
+  <div class="row">
+
+
+<div class="container">
+
+  <h2>List a Book</h2>
+
+  <div class="row">
+    <section class="col-xs-12">
+
+  <div class="form-group">
+    <label for="inputTitle">Book Title</label>
+    <input class="form-control" type="text" id="inputTitle" 
+           placeholder="Book Title" #bookTitle>
+  </div>
+
+  <div class="form-group">
+    <label for="inputAuthor">Author</label>
+    <input class="form-control"type="text" id="inputAuthor" 
+           placeholder="Author" #bookAuthor>
+  </div>
+
+  <div class="form-group">
+    <label for="inputIsbn">ISBN</label>
+    <input class="form-control" type="Text" id="inputIsbn" 
+           placeholder="ISBN" #bookISBN>
+  </div>
+
+  <div class="form-group">
+  <label for="inputDescription">Description</label>
+  <textarea  class="form-control" type="text" id="inputDescription" 
+    placeholder="Description" #bookDescription></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="inputClassUse">Class Usage</label>
+    <input class="form-control" type="text" id="inputClassUse" 
+           placeholder="Class Usage" #bookClassUse>
+  </div>
+
+  <div class="form-group">
+  <label for="bookCondition">Book Condition</label>
+  <select class="form-control" id="bookCondition" #bookCondition>
+    <option>Choose...</option>
+    <option>Used - Very Good</option>
+    <!--<option>raybo.org</option>
+    <option>iviewsource.com</option>-->
+  </select>
+  </div>
+
+  <div class="form-group">
+    <label for="inputSeller">Seller</label>
+    <input class="form-control" type="text" id="inputSeller" 
+           placeholder="Seller" #bookSeller>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPrice">Price</label>
+    <input class="form-control" type="text" id="inputPrice" 
+           placeholder="Price" #bookPrice>
+  </div>
+
+  <div class="form-group">
+    <label for="inputImg">Image Link</label>
+    <input class="form-control" type="text" id="inputImg" 
+           placeholder="Image Link" #bookImg>
+  </div>
+
+  <div class="form-group">
+    <label for="inputDate">Today's Date</label>
+    <input class="form-control" type="text" id="inputDate" 
+           placeholder="ie: 01/01/17" #bookDate>
+  </div>
+
+  <div class="checkbox">
+    <label>
+    <input id="inputConsent" type="checkbox">
+    By submiting this form, I verify that the information above is accurate to tbe best of my ability.</label>
+  </div>
+
+  <input class="btn btn-default pull-right" value="List Book" 
+    (click)="add(bookTitle.value, bookAuthor.value, bookISBN.value, bookDescription.value,
+             bookClassUse.value, bookCondition.value, bookSeller.value, bookPrice.value, bookImg.value,
+             bookDate.value)" routerLink="/book" type="submit">
+
+    </section>
+  </div><!-- row -->   
+</div><!-- content container -->

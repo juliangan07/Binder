@@ -1,0 +1,108 @@
+<div class="content container">
+  <div class="row">
+    
+    <!--Sort function for medium and large size-->
+    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 hidden-xs hidden-sm">
+        <div class="sort">
+        <h3>Sort By:</h3>
+        <div class="checkbox">
+          <label>
+          <input id="sortPrice1" type="checkbox">
+            Price</label>
+        </div>
+        <div class="checkbox">
+          <label>
+          <input id="sortCondition1" type="checkbox">
+            Condition</label>
+        </div>
+        <div class="checkbox">
+          <label>
+          <input id="sortRating1" type="checkbox">
+            Rating</label>
+        </div>
+        </div>
+    </div>
+
+    <!--Sort function for small and xs size-->
+    <div class="col-xs-12 dropdown hidden-md hidden-lg form-group">
+      
+      <!--Sort Button-->
+      <a class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+          Sort  <span class="caret"></span>
+      </a>
+
+      <!--Sort choices-->
+      <ul class="dropdown-menu">
+        <li>
+          <div class="checkbox">
+            <label>
+              <input id="sortPrice2" type="checkbox" />Price
+            </label>
+          </div>
+        </li>
+        <li>
+          <div class="checkbox">
+            <label>
+              <input id="sortCondition2" type="checkbox" />Condition
+            </label>
+          </div>
+        </li>
+        <li>
+          <div class="checkbox">
+            <label>
+              <input id="sortRating2" type="checkbox" />Rating
+            </label>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+      <ul class="media list productListUL">
+        <li class="media" *ngFor="let book of books" (click)="onSelect(book)">
+          <div class="media-left">
+            <a routerLink="/booklist"><img class="media-object" src="{{book.img}}" alt="{{book.title}}" width="150px"></a>
+          </div>
+
+          <div class="media-right">
+            <h2 class="media-heading"><a [routerLink]="['/booklist', book.id]">{{book.title}}</a></h2>
+            <h6>by: {{book.author}}</h6>
+            <h5>ISBN: {{book.isbn}}</h5>
+            <h5>Date Added: {{book.date}}</h5>
+            <h2 class="media-heading">${{book.price}}</h2>
+          </div>
+          
+          <hr />
+
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 hidden-md hidden-lg" *ngFor="let book of books">
+          <div class="col-xs-12">
+            <div class="thumbnail">
+              <!--<a href="#">-->
+              <a [routerLink]="['/booklist', book.id]"><img src="{{book.img}}" alt="{{book.title}}" width="150px" (click)="onSelect(book)"></a>
+              <div class="caption text-center">
+                <h2 class="media-heading breakWord"><a [routerLink]="['/booklist', book.id]">{{book.title}}</a></h2>
+                <h6>by: {{book.author}}</h6>
+                <h5>ISBN: {{book.isbn}}</h5>
+                <h5>Date Added: {{book.date}}</h5>
+                <h2 class="media-heading">${{book.price}}</h2>
+            </div>
+            <!--</a> -->
+        </div>
+
+        <hr />
+
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+

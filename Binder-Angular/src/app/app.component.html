@@ -1,0 +1,83 @@
+<nav class="navbar navbar-default navColor" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand titleFont" routerLink="/default">{{appTitle}}</a>
+    </div>
+
+  <div>
+    <a *ngFor="let book of books"  [routerLink]="['/booklist', book.id]">
+    <!--<div>
+      <h4>{{book.title}}</h4>
+    </div>-->
+    </a>
+  </div>
+  <book-search></book-search>
+
+    <div class="collapse navbar-collapse" id="collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li><a href="default.html">Home</a><li>-->
+        <li><a routerLink="/upload">List a Book</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a routerLink="/register">Register</a></li>
+        <li><a href="login.html" style="color:#000000" class="btn btn-default btnSignInColor">Sign In</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+<br /><br />
+
+    <router-outlet></router-outlet>
+
+<br /><br />
+<nav class="navbar navbar-default navbar-fixed-bottom hidden-xs bottomMargin">
+  <div class="container">
+    <div class="navbar-header navbar-left">
+      <a class="navbar-brand" href="https://www.und.edu/" target="_blank">Follow UND</a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-left">
+      <li><a href="https://www.facebook.com/myUND/" target="_blank" class="fa-lg"><span class="fa fa-facebook-square fa-lg" aria-hidden="true"></span></a></li>
+      <li><a href="https://twitter.com/myund?lang=en" target="_blank" class="fa-lg"><span class="fa fa-twitter-square fa-lg" aria-hidden="true"></span></a></li>
+      <li><a href="http://und.edu/social-media/be-social.cfm" target="_blank" class="fa-lg"><span class="fa fa-instagram fa-lg" aria-hidden="true"></span></a></li>
+    </ul>
+
+    <div class="navbar-header navbar-right">
+      <a class="navbar-brand" href="https://business.und.edu/" target="_blank">Follow COBPA</a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="https://www.facebook.com/undcobpa/?ref=page_internal&fref=nf" target="_blank" class="fa-lg"><span class="fa fa-facebook-square fa-lg" aria-hidden="true"></span></a></li>
+      <li><a href="https://twitter.com/undbusiness?lang=en" target="_blank" class="fa-lg"><span class="fa fa-twitter-square fa-lg" aria-hidden="true"></span></a></li>
+      <li><a href="http://und.edu/social-media/be-social.cfm" target="_blank" class="fa-lg"><span class="fa fa-instagram fa-lg" aria-hidden="true"></span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="navbar navbar-default hidden-sm hidden-md hidden-lg navColor" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://www.business.und.edu/" target="_blank" style="float:left;">Follow UND</a>
+      <a class="navbar-brand" href="https://www.und.edu/" target="_blank" style="float:right;">Follow COBPA</a>
+    </div>
+
+    <ul class="nav navbar-nav" style="float:left;">
+      <li><a href="https://www.facebook.com/myUND/" target="_blank" class="fa-lg"><span class="fa fa-facebook-square fa-lg" aria-hidden="true"></span></a></li>
+      <li><a href="https://twitter.com/myund?lang=en" target="_blank" class="fa-lg"><span class="fa fa-twitter-square fa-lg" aria-hidden="true"></span></a></li>
+      <li><a href="http://und.edu/social-media/be-social.cfm" target="_blank" class="fa-lg"><span class="fa fa-instagram fa-lg" aria-hidden="true"></span></a></li>
+    </ul>
+
+    <ul class="nav navbar-nav" style="float:right;">
+      <li><a href="https://www.facebook.com/undcobpa/?ref=page_internal&fref=nf" target="_blank" class="fa-lg"><span class="fa fa-facebook-square fa-lg" aria-hidden="true"></span></a></li>
+      <li><a href="https://twitter.com/undbusiness?lang=en" target="_blank" class="fa-lg"><span class="fa fa-twitter-square fa-lg" aria-hidden="true"></span></a></li>
+      <li><a href="http://und.edu/social-media/be-social.cfm" target="_blank" class="fa-lg"><span class="fa fa-instagram fa-lg" aria-hidden="true"></span></a></li>
+    </ul>
+    
+  </div>
+</nav>

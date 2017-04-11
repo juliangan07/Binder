@@ -1,0 +1,20 @@
+
+.panel-default {
+    position:absolute;
+    width: 70%;
+    cursor: pointer;
+}
+
+.btn-default:hover {
+    background-color: #FF671F;
+    transition: 0.2s;
+    transform: translateY(3px);
+}
+
+.btn-default:active {
+    color: #FF671F;
+}
+
+.panel {
+    z-index: 10;
+}

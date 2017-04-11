@@ -1,0 +1,82 @@
+<div class="content container" *ngIf="book">
+  <div class="row">
+
+
+<div class="container">
+
+  <h2>Edit Book Listing</h2>
+
+  <div class="row">
+    <section class="col-xs-12">
+
+  <div class="form-group">
+    <label for="inputTitle">Book Title</label>
+    <input class="form-control" type="text" id="inputTitle" 
+           placeholder="Book Title" [(ngModel)]="book.title">
+  </div>
+
+  <div class="form-group">
+    <label for="inputAuthor">Author</label>
+    <input class="form-control"type="text" id="inputAuthor" 
+           placeholder="Author" [(ngModel)]="book.author">
+  </div>
+
+  <div class="form-group">
+    <label for="inputIsbn">ISBN</label>
+    <input class="form-control" type="Text" id="inputIsbn" 
+           placeholder="ISBN" [(ngModel)]="book.isbn">
+  </div>
+
+  <div class="form-group">
+  <label for="inputDescription">Description</label>
+  <textarea  class="form-control" type="text" id="inputDescription" 
+    placeholder="Description" [(ngModel)]="book.description"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="inputClassUse">Class Usage</label>
+    <input class="form-control" type="text" id="inputClassUse" 
+           placeholder="Class Usage" [(ngModel)]="book.classUse">
+  </div>
+
+  <div class="form-group">
+  <label for="bookCondition">Book Condition</label>
+  <select class="form-control" id="bookCondition" [(ngModel)]="book.condition">
+    <option>Choose...</option>
+    <option>Used - Very Good</option>
+    <!--<option>raybo.org</option>
+    <option>iviewsource.com</option>-->
+  </select>
+  </div>
+
+  <div class="form-group">
+    <label for="inputSeller">Seller</label>
+    <input class="form-control" type="text" id="inputSeller" 
+           placeholder="Seller" [(ngModel)]="book.seller">
+  </div>
+
+  <div class="form-group">
+    <label for="inputPrice">Price</label>
+    <input class="form-control" type="text" id="inputPrice" 
+           placeholder="Price" [(ngModel)]="book.price">
+  </div>
+
+  <div class="form-group">
+    <label for="inputImg">Image Link</label>
+    <input class="form-control" type="text" id="inputImg" 
+           placeholder="Image Link" [(ngModel)]="book.img">
+  </div>
+
+  <div class="checkbox">
+    <label>
+    <input id="inputConsent" type="checkbox">
+    By submiting this form, I verify that the information above is accurate to tbe best of my ability.</label>
+  </div>
+
+  <div>
+    <input class="btn btn-default pull-right" value="Delete" (click)="delete(book); $event.stopPropagation()" routerLink="/book" type="submit">
+    <input class="btn btn-default pull-right" value="Update" (click)="update()" routerLink="/book" type="submit">
+  </div>
+    </section>
+  </div><!-- row -->   
+</div><!-- content container -->

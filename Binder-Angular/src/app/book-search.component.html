@@ -1,0 +1,40 @@
+<div class="navbar-form navbar-left">
+<div id="search-component" class="input-group">
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" class="form-control"
+    placeholder="Search" type="text"/>
+
+    <div class="input-group-btn">
+        <a class="btn btn-default" type="submit" routerLink="/book">
+            <i class="glyphicon glyphicon-search"></i>
+        </a>
+    </div>
+</div>
+
+    <div *ngFor="let book of books | async"
+         class="panel panel-default" #searchPanel>
+         <div class="panel-heading">Did you mean...</div>
+         <div class="panel-body" (click)="gotoDetail(book); searchBox.value=''" >
+             {{book.title}}
+         </div>
+    </div>
+
+</div>
+
+
+<!--<div class="navbar-form navbar-left">
+    <div class="input-group" id="search-component">
+        <input type="text" class="form-control" placeholder="Search"
+         #searchBox id="search-box" (keyup)="search(searchBox.value)"/>
+        
+        <div class="input-group-btn">
+            <a class="btn btn-default" type="submit" routerLink="/book">
+                <i class="glyphicon glyphicon-search"></i>
+            </a>
+        </div>
+
+        <div *ngFor="let book of Books | async"
+            (click)="gotoDetail(book)" class="search-result">
+            {{book.title}}
+        </div>
+    </div>
+</div>-->
