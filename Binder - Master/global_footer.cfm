@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32" />
+  <link href="https://fonts.googleapis.com/css?family=Alegreya|Cabin:400,500|Catamaran:400,500|Crimson+Text:600|Harmattan|Libre+Baskerville|Noto+Serif|PT+Serif:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:300,400|Indie+Flower|Poppins:500|Quicksand|Raleway:500|Titillium+Web:600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+  <title>Binder - Connecting students and their next textbook</title>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-bottom hidden-xs">
+  <div class="container">
+    <div class="navbar-header navbar-left">
+      <a class="navbar-brand" href="https://www.und.edu/" target="_blank">Follow UND</a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-left">
+      <li><a href="https://www.facebook.com/myUND/" target="_blank" class="fa-lg"><span class="fa fa-facebook-square fa-lg" aria-hidden="true"></span></a></li>
+      <li><a href="https://twitter.com/myund?lang=en" target="_blank" class="fa-lg"><span class="fa fa-twitter-square fa-lg" aria-hidden="true"></span></a></li>
+      <li><a href="http://und.edu/social-media/be-social.cfm" target="_blank" class="fa-lg"><span class="fa fa-instagram fa-lg" aria-hidden="true"></span></a></li>
+    </ul>
+
+    <div class="navbar-header navbar-right">
+      <a class="navbar-brand" href="https://business.und.edu/" target="_blank">Follow COBPA</a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="https://www.facebook.com/undcobpa/?ref=page_internal&fref=nf" target="_blank" class="fa-lg"><span class="fa fa-facebook-square fa-lg" aria-hidden="true"></span></a></li>
+      <li><a href="https://twitter.com/undbusiness?lang=en" target="_blank" class="fa-lg"><span class="fa fa-twitter-square fa-lg" aria-hidden="true"></span></a></li>
+      <li><a href="http://und.edu/social-media/be-social.cfm" target="_blank" class="fa-lg"><span class="fa fa-instagram fa-lg" aria-hidden="true"></span></a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-default hidden-sm hidden-md hidden-lg navColor" role="navigation">
+  <div class="container" style="padding-bottom: -70px;">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://www.business.und.edu/" style="float:left;">Follow UND</a>
+      <a class="navbar-brand" href="https://www.und.edu/" style="float:right;">Follow COBPA</a>
+    </div>
+
+    <ul class="nav navbar-nav" style="float:left;">
+      <li><a href="https://www.facebook.com/myUND/" target="_blank" class="fa-lg"><span class="fa fa-facebook-square fa-lg" aria-hidden="true"></span></a></li>
+      <li><a href="https://twitter.com/myund?lang=en" target="_blank" class="fa-lg"><span class="fa fa-twitter-square fa-lg" aria-hidden="true"></span></a></li>
+      <li><a href="http://und.edu/social-media/be-social.cfm" target="_blank" class="fa-lg"><span class="fa fa-instagram fa-lg" aria-hidden="true"></span></a></li>
+    </ul>
+
+    <ul class="nav navbar-nav" style="float:right;">
+      <li><a href="https://www.facebook.com/undcobpa/?ref=page_internal&fref=nf" target="_blank" class="fa-lg"><span class="fa fa-facebook-square fa-lg" aria-hidden="true"></span></a></li>
+      <li><a href="https://twitter.com/undbusiness?lang=en" target="_blank" class="fa-lg"><span class="fa fa-twitter-square fa-lg" aria-hidden="true"></span></a></li>
+      <li><a href="http://und.edu/social-media/be-social.cfm" target="_blank" class="fa-lg"><span class="fa fa-instagram fa-lg" aria-hidden="true"></span></a></li>
+    </ul>
+    
+  </div>
+</nav>
+
+<script src="https://use.fontawesome.com/8fbc035d13.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

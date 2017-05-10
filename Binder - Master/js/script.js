@@ -1,7 +1,7 @@
 $(function() {
-    $('[data-toggle="tooltip"]').tooltip();
+     $('[data-toggle="tooltip"]').tooltip();
     
-    $('[data-toggle="popover"]').popover();
+     $('[data-toggle="popover"]').popover(); 
 
     $('.carousel').carousel({
         interval: 2000,
@@ -9,4 +9,5 @@ $(function() {
         wrap: false,
         keyboard: false
     });
+	
 });
